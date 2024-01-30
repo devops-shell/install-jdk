@@ -140,7 +140,7 @@ echo "[**]: install openJDK"
 cmd="apt-get install openjdk-"$1"-jdk-headless -y"
 $cmd
 
-elif [[ "$disto" == *"$rhel"* ]]; then
+elif [[ "$distro" == *"$rhel"* ]]; then
 
 echo "[*]: uninstall openJDK"
 
