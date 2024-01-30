@@ -120,25 +120,33 @@ get_disto_like() {
 #Fonction pour l'installation de JDK
 installjdk() {
 
-echo "[*]: uninstall openJDK"
+
 
 #Distro variable
 debian=debian
 rhel=rhel
-
-apt-get remove --purge openjdk-* -y
-
-echo "[**]: install openJDK"
 
 # Appel de la fonction renvoyant la distro mère
 distro=$(get_disto_like)
 
 if [[ "$distro" == *"$debian"* ]]; then
 
+echo "[*]: uninstall openJDK"
+
+apt-get remove --purge openjdk-* -y
+
+echo "[**]: install openJDK"
+
 cmd="apt-get install openjdk-"$1"-jdk-headless -y"
 $cmd
 
 elif [[ "$disto" == *"$rhel"* ]]; then
+
+echo "[*]: uninstall openJDK"
+
+dnf remove openjdk-* -y
+
+echo "[**]: install openJDK"
 
 cmd="dnf install java-"$1"-openjdk -y"
 $cmd
@@ -156,13 +164,9 @@ echo "[***] End install JDK"
 #Fonction pour l'installation de JRE
  installjre() {
 
-echo "[*]: uninstall openJRE"
-
 #Distro variable
 debian=debian
 rhel=rhel
-
-apt-get remove --purge openjdk-* -y
 
 echo "[**]: install openJRE"
 
@@ -172,11 +176,20 @@ distro=$(get_disto_like)
 
 if [[ "$distro" == *"$debian"* ]]; then
 
+echo "[*]: uninstall openJRE"
+
+apt-get remove --purge openjdk-* -y
+
 cmd="apt-get install openjdk-"$1"-jre-headless -y"
 $cmd
 
     
 elif [[ "$distro" == *"$rhel"* ]]; then
+
+echo "[*]: uninstall openJRE"
+
+
+dnf remove openjdk-* -y
     
 cmd="dnf install java-"$1"-openjdk-headless -y"
 $cmd
