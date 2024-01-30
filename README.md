@@ -1,5 +1,5 @@
 # install-jdk
-Ce script shell permet d'installer JDK ou JRE en spécifiant les versions prises en charges par ce dernier
+Ce script shell permet d'installer JDK ou JRE en spécifiant une des version LTS suivantes : **8, 11 , 17 , 21**
 
 # **Installation JDK || JRE 8,11,17,21**
 
@@ -48,13 +48,13 @@ Assurez-vous de rendre le script exécutable avec la commande :
 ## Guide d'exécution du script 
 
 
--h, --helps               Afficher l'aide
+**-h**, **--helps**               Afficher l'aide
 
  Global Options :
 
-  -d, --jdk          Installer jdk \
-  -r, --jre          Installer jre \
-  -v, --version <number_version> entier      Numero version jdk ou jre
+  **-d**, **--jdk**          Installer jdk \
+  **-r**, **--jre**          Installer jre \
+  **-v**, **--version** <**number_version**> entier      Numero version jdk ou jre
 
   **Nota**: Les versions prises en charge sont **8 , 11 ,  17 et 21**
 
