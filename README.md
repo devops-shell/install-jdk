@@ -12,22 +12,23 @@ Pour installer JDK ou JRE en spécifiant une des versions LTS suivantes [8,11,17
 >Vous avez besoin d'installer **JRE** (Java Runtime Environment) lorsque vous ne développez pas mais souhaitez exécuter des applications Java existantes, le JRE est suffisant. C'est-à-dire si vous avez un bytecode (Code intermédiaire, code compilé qui est appelé à être interprété et exécuté par la **JVM**). Le JRE contient le JVM (Java Virtual Machine) qui permet d'exécuter le code java compilé.
 
 
-# Clonez le script à partir du GitHub
+# Clonez le script à partir de GitHub
 
-**Nota** : Rassurez-vous d'avoir git installé au cas contraire, il faut tout d'abord l'installer.
+**Nota** : Rassurez-vous d'avoir git installé, au cas contraire, il faut tout d'abord l'installer.
 
-## Installation Git sur distro basée sur RHEL
+## Installation Git sur les distros basée sur RHEL
 
 `sudo dnf install git-all`
 
-## Installation Git sur distro basée sur debian
+## Installation Git sur les distros basée sur debian
 
 `sudo apt install git-all`
 
+### Clonez le script 
 
 `git clone https://github.com/devops-shell/install-jdk.git`
 
-Allez dans le répertoire install-jdk si vous n'avez pas nommé le répertoire dans le quel vous voulez cloner ledit script
+Après avoir cloné le repository contenant le script, allez dans le répertoire **install-jdk** si vous n'avez pas nommé le répertoire dans le quel vous voulez cloner ledit script.
 
 `cd install-jdk`
 
