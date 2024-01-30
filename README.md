@@ -1,13 +1,13 @@
 # install-jdk
 Ce script shell permet d'installer JDK ou JRE en spécifiant les versions prises en charges par ce dernier
 
-# Guide d'utilisation du script [**Installation JDK || JRE 8,11,17,21**]
+# **Installation JDK || JRE 8,11,17,21**
 
 Pour installer JDK ou JRE en spécifiant une des versions LTS suivantes [8,11,17,21] sur votre système d'exploitation suivez ce guide :
 
 # Pour quel fin vous avez besoin installer JDK ou JRE ?
 
->Vous avez besoin d'installer **JDK** lorsque vous développez des applications Java (JEE, JSE, Android, ...), vous avez besoin du JDK car il contient tous les outils de développement.  Il comprend le **JRE** et tous les outils nécessaires pour développer, compiler (__javc__ : le compilateur Java), déboguer et exécuter des applications Java.
+>Vous avez besoin d'installer **JDK** lorsque vous développez des applications Java (JEE, JSE, Android, ...), vous avez besoin du JDK car il contient tous les outils de développement.  Il comprend le **JRE** et tous les outils nécessaires pour développer, compiler (__javac__ : le compilateur Java), déboguer et exécuter des applications Java.
 
 >Vous avez besoin d'installer **JRE** (Java Runtime Environment) lorsque vous ne développez pas mais souhaitez exécuter des applications Java existantes, le JRE est suffisant. C'est-à-dire si vous avez un bytecode (Code intermédiaire, code compilé qui est appelé à être interprété et exécuté par la **JVM**). Le JRE contient le JVM (Java Virtual Machine) qui permet d'exécuter le code java compilé.
 
@@ -44,16 +44,16 @@ Assurez-vous de rendre le script exécutable avec la commande :
 
 **Nota** : Pour devez être en mode sudo ou votre session shell doit avoir le droit super utilisateur puisque certaines commandes que contient ce script demandent d'avoir des droits super utilisateur.
 
-## Guide d'installation 
+## Guide d'exécution du script 
 
 
-`-h, --helps               Afficher l'aide 
+-h, --helps               Afficher l'aide 
 
  Global Options :
 
   -d, --jdk          Installer jdk
   -r, --jre          Installer jre
-  -v, --version <number_version> entier      Numero version jdk ou jre`
+  -v, --version <number_version> entier      Numero version jdk ou jre
 
   **Nota**: Les versions prises en charge sont **8 , 11 ,  17 et 21**
 
@@ -105,8 +105,19 @@ ou
 `sudo ./install-jdk.sh -rv 21`
 
 
+**=========================================**
 
+**Nota** : Après avoir exécuté le script, le JDK ou le JRE sera installé. Et pour vérifier faites : 
 
+## Vérification de la version du compilateur installé 
+
+`javac -version`
+
+**Nota** : Cette commande ci-dessus n'est valable que si vous avez installé le JDK.
+
+## Vérification de la version Java installé 
+
+`java -version`
 
 
 
