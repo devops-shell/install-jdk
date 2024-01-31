@@ -118,13 +118,13 @@ ou
 
 **Nota** : Après avoir exécuté le script, le JDK ou le JRE sera installé. Et pour vérifier faites : 
 
-### Vérification de la version du compilateur installé 
+#### Vérification de la version du compilateur installé 
 
 `javac -version`
 
 **Nota** : Cette commande ci-dessus n'est valable que si vous avez installé le JDK.
 
-### Vérification de la version Java installé 
+#### Vérification de la version Java installé 
 
 `java -version`
 
