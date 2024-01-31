@@ -144,14 +144,10 @@ elif [[ "$distro" == *"$rhel"* ]]; then
 
 echo "[*]: uninstall openJDK"
 
-remouvdoc= "rm -rf /usr/share/doc/java-*"
-$remouvdoc
+remouv="dnf remove java-* -y"
 
-remouvjvm= "rm -rf /usr/lib/jvm/java-*"
-$remouvjvm
-
-remouvjava= "rm -rf /etc/java/"
-$remouvjava
+# Exécution de la commande 
+$(eval "$remouv")
 
 echo "[**]: install openJDK"
 
@@ -203,14 +199,10 @@ elif [[ "$distro" == *"$rhel"* ]]; then
 
 echo "[*]: uninstall openJDK"
 
-remouvdoc= "rm -rf /usr/share/doc/java-*"
-$remouvdoc
+remouv="dnf remove java-* -y"
 
-remouvjvm= "rm -rf /usr/lib/jvm/java-*"
-$remouvjvm
-
-remouvjava= "rm -rf /etc/java/"
-$remouvjava
+# Exécution de la commande 
+$(eval "$remouv")
 
 echo "[**]: install openJDK"
 
