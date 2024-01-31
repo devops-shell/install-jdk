@@ -146,12 +146,12 @@ echo "[*]: uninstall openJDK"
 
 if [ $1 -eq 8 ] ; then
 
-remouv= "dnf remove java"$1"-openjdk-devel"
+remouv= "dnf remove java-1.8.0*"
 $remouv
 
 elif
 
-remouv= "dnf remove java"$1"-openjdk-devel"
+remouv= "dnf remove java-"$1"*"
 $remouv
 
 fi
@@ -208,12 +208,12 @@ echo "[*]: uninstall openJDK"
 
 if [ $1 -eq 8 ] ; then
 
-remouv= "dnf remove java"$1"-openjdk-devel"
+remouv= "dnf remove java-1.8.0*"
 $remouv
 
 elif
 
-remouv= "dnf remove java"$1"-openjdk-devel"
+remouv= "dnf remove java-"$1"*"
 $remouv
 
 fi
