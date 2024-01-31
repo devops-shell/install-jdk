@@ -144,16 +144,34 @@ elif [[ "$distro" == *"$rhel"* ]]; then
 
 echo "[*]: uninstall openJDK"
 
-dnf remove openjdk-* -y
+if [ $1 -eq 8 ] ; then
+
+remouv= "dnf remove java"$1"-openjdk-devel"
+$remouv
+
+elif
+
+remouv= "dnf remove java"$1"-openjdk-devel"
+$remouv
+
+fi
 
 echo "[**]: install openJDK"
 
-cmd="dnf install java-"$1"-openjdk -y"
+
+if [ $1 -eq 8 ] ; then
+
+cmd="dnf install -y java-1.8.0-openjdk"
+$cmd
+
+elif
+
+cmd="dnf install -y java-"$1"-openjdk"
 $cmd
 
 fi
 
-javac -version # Test version javac pour la compilation du code Java à bytecode
+fi
 
 java -version # Test version java pour l'execution de bytecode au code machine
     
@@ -168,8 +186,6 @@ echo "[***] End install JDK"
 debian=debian
 rhel=rhel
 
-echo "[**]: install openJRE"
-
 
 # Appel de la fonction renvoyant la distro mère
 distro=$(get_disto_like)
@@ -180,19 +196,44 @@ echo "[*]: uninstall openJRE"
 
 apt-get remove --purge openjdk-* -y
 
+echo "[**]: install openJDK"
+
 cmd="apt-get install openjdk-"$1"-jre-headless -y"
 $cmd
 
     
 elif [[ "$distro" == *"$rhel"* ]]; then
 
-echo "[*]: uninstall openJRE"
+echo "[*]: uninstall openJDK"
+
+if [ $1 -eq 8 ] ; then
+
+remouv= "dnf remove java"$1"-openjdk-devel"
+$remouv
+
+elif
+
+remouv= "dnf remove java"$1"-openjdk-devel"
+$remouv
+
+fi
+
+echo "[**]: install openJDK"
 
 
-dnf remove openjdk-* -y
-    
-cmd="dnf install java-"$1"-openjdk-headless -y"
+if [ $1 -eq 8 ] ; then
+
+cmd="dnf install -y java-1.8.0-openjdk"
 $cmd
+
+elif
+
+cmd="dnf install -y java-"$1"-openjdk"
+$cmd
+
+fi
+    
+
 
 fi
 

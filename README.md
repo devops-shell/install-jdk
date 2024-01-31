@@ -11,6 +11,8 @@ Pour installer JDK ou JRE en spécifiant une des versions LTS suivantes [8,11,17
 
 >Vous avez besoin d'installer **JRE** (Java Runtime Environment) lorsque vous ne développez pas mais souhaitez exécuter des applications Java existantes, le JRE est suffisant. C'est-à-dire si vous avez un bytecode (Code intermédiaire, code compilé qui est appelé à être interprété et exécuté par la **JVM**). Le JRE contient le JVM (Java Virtual Machine) qui permet d'exécuter le code java compilé.
 
+>Sur les distributions Red Hat Enterprise Linux (RHEL) et CentOS, le **JRE** (Java Runtime Environment) est généralement inclus dans le paquet OpenJDK. OpenJDK est la version open source de Java et est largement utilisé dans les distributions basées sur Red Hat.
+
 
 # Clonez le script à partir de GitHub
 
@@ -68,7 +70,7 @@ ou
 `sudo ./install-jdk.sh -h`
 
  
-**=========================================**
+**==========================**
 
 ## 2. Installation JDK
 
@@ -87,7 +89,7 @@ ou
 `sudo ./install-jdk.sh -dv 21`
 
 
-**=========================================**
+**=========================**
 
 
 ## 3. Installation JRE
@@ -106,7 +108,7 @@ ou
 `sudo ./install-jdk.sh -rv 21`
 
 
-**=========================================**
+**=========================**
 
 **Nota** : Après avoir exécuté le script, le JDK ou le JRE sera installé. Et pour vérifier faites : 
 
