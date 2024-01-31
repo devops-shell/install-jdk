@@ -146,7 +146,7 @@ echo "[*]: uninstall openJDK"
 
 content="java-"
 
-remouv= "dnf remove -y "$content"*"
+remouv= "dnf remove -y ""$content"*""
 $remouv
 
 echo "[**]: install openJDK"
@@ -202,7 +202,7 @@ echo "[*]: uninstall openJDK"
 content="java-"
 
 
-remouv= "dnf remove -y "$content"*"
+remouv= "dnf remove -y ""$content"*""
 $remouv
 
 echo "[**]: install openJDK"
