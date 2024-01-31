@@ -144,7 +144,7 @@ elif [[ "$distro" == *"$rhel"* ]]; then
 
 echo "[*]: uninstall openJDK"
 
-remouv= "dnf remove --purge java-* -y"
+remouv= "sudo dnf remove --purge java-* -y"
 $remouv
 
 echo "[**]: install openJDK"
@@ -197,7 +197,7 @@ elif [[ "$distro" == *"$rhel"* ]]; then
 
 echo "[*]: uninstall openJDK"
 
-remouv= "dnf remove --purge java-* -y"
+remouv= "sudo dnf remove --purge java-* -y"
 $remouv
 
 echo "[**]: install openJDK"
