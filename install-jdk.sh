@@ -149,7 +149,7 @@ if [ $1 -eq 8 ] ; then
 remouv= "dnf remove java-1.8.0*"
 $remouv
 
-elif
+else
 
 remouv= "dnf remove java-"$1"*"
 $remouv
@@ -164,7 +164,7 @@ if [ $1 -eq 8 ] ; then
 cmd="dnf install -y java-1.8.0-openjdk"
 $cmd
 
-elif
+else
 
 cmd="dnf install -y java-"$1"-openjdk"
 $cmd
@@ -211,7 +211,7 @@ if [ $1 -eq 8 ] ; then
 remouv= "dnf remove java-1.8.0*"
 $remouv
 
-elif
+else
 
 remouv= "dnf remove java-"$1"*"
 $remouv
@@ -226,7 +226,7 @@ if [ $1 -eq 8 ] ; then
 cmd="dnf install -y java-1.8.0-openjdk"
 $cmd
 
-elif
+else
 
 cmd="dnf install -y java-"$1"-openjdk"
 $cmd
