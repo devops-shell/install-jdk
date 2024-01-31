@@ -1,11 +1,11 @@
 # install-jdk
 Ce script shell permet d'installer JDK ou JRE en spécifiant une des version LTS suivantes : **8, 11 , 17 , 21**
 
-# **Installation JDK || JRE 8,11,17,21**
+### **Installation JDK || JRE 8,11,17,21**
 
 Pour installer JDK ou JRE en spécifiant une des versions LTS suivantes [8,11,17,21] sur votre système d'exploitation suivez ce guide :
 
-# Pour quel fin vous avez besoin installer JDK ou JRE ?
+### Pour quel fin vous avez besoin installer JDK ou JRE ?
 
 >Vous avez besoin d'installer **JDK** lorsque vous développez des applications Java (JEE, JSE, Android, ...), vous avez besoin du JDK car il contient tous les outils de développement.  Il comprend le **JRE** et tous les outils nécessaires pour développer, compiler (__javac__ : le compilateur Java), déboguer et exécuter des applications Java.
 
@@ -14,15 +14,15 @@ Pour installer JDK ou JRE en spécifiant une des versions LTS suivantes [8,11,17
 >Sur les distributions Red Hat Enterprise Linux (RHEL) et CentOS, le **JRE** (Java Runtime Environment) est généralement inclus dans le paquet OpenJDK. OpenJDK est la version open source de Java et est largement utilisé dans les distributions basées sur Red Hat.
 
 
-# Clonez le script à partir de GitHub
+### Clonez le script à partir de GitHub
 
 **Nota** : Rassurez-vous d'avoir git installé, au cas contraire, il faut tout d'abord l'installer.
 
-## Installation Git sur les distros basée sur RHEL
+### Installation Git sur les distros basée sur RHEL
 
 `sudo dnf install git-all`
 
-## Installation Git sur les distros basée sur debian
+### Installation Git sur les distros basée sur debian
 
 `sudo apt install git-all`
 
@@ -34,7 +34,7 @@ Après avoir cloné le repository contenant le script, allez dans le répertoire
 
 `cd install-jdk`
 
-# Rendre le script exécutable
+### Rendre le script exécutable
 
 Assurez-vous de rendre le script exécutable avec la commande :
 
@@ -43,17 +43,17 @@ Assurez-vous de rendre le script exécutable avec la commande :
  Cette commande précédente va donner à l'utilisateur en cours le droit d'exécution du script
 
 
-# Exécution du script
+### Exécution du script
 
 **Nota** : Vous devez être en mode sudo ou votre session shell doit avoir le droit super utilisateur puisque certaines commandes que contient ce script demandent d'avoir des droits super utilisateur.
 
-### Prérequis pour les distributions Red Hat Enterprise Linux (RHEL) et CentOS
+#### Prérequis pour les distributions Red Hat Enterprise Linux (RHEL) et CentOS
 
 **Nota** : Si vous utilisez une distribution Red Hat Enterprise Linux et vous avez déjà une version JDK installée. Vous devez d'abord la supprimer en saisissant cette commande : 
 
 `dnf remove java-* -y`
 
-## Guide d'exécution du script 
+### Guide d'exécution du script 
 
 
 **-h**, **--helps**               Afficher l'aide
@@ -67,7 +67,7 @@ Assurez-vous de rendre le script exécutable avec la commande :
   **Nota**: Les versions prises en charge sont **8 , 11 ,  17 et 21**
 
 
-## 1. Afficher le guide d'installation
+### 1. Afficher le guide d'installation
 
 `sudo ./install-jdk.sh --helps`
 
@@ -78,7 +78,7 @@ ou
  
 **==========================**
 
-## 2. Installation JDK
+### 2. Installation JDK
 
 
 [1]  **Première possibilité**
@@ -98,7 +98,7 @@ ou
 **=========================**
 
 
-## 3. Installation JRE
+### 3. Installation JRE
 
 [1] **Première possibilité**
 
@@ -118,13 +118,13 @@ ou
 
 **Nota** : Après avoir exécuté le script, le JDK ou le JRE sera installé. Et pour vérifier faites : 
 
-## Vérification de la version du compilateur installé 
+### Vérification de la version du compilateur installé 
 
 `javac -version`
 
 **Nota** : Cette commande ci-dessus n'est valable que si vous avez installé le JDK.
 
-## Vérification de la version Java installé 
+### Vérification de la version Java installé 
 
 `java -version`
 
