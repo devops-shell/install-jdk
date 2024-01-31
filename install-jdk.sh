@@ -144,9 +144,7 @@ elif [[ "$distro" == *"$rhel"* ]]; then
 
 echo "[*]: uninstall openJDK"
 
-content="java-*"
-
-remouv= $("dnf remove "$content" -y")
+remouv= "dnf remove java-* -y"
 $remouv
 
 echo "[**]: install openJDK"
@@ -199,9 +197,7 @@ elif [[ "$distro" == *"$rhel"* ]]; then
 
 echo "[*]: uninstall openJDK"
 
-content="java-*"
-
-remouv= $("dnf remove "$content" -y")
+remouv= "dnf remove java-* -y"
 $remouv
 
 echo "[**]: install openJDK"
