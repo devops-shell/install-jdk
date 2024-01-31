@@ -47,6 +47,12 @@ Assurez-vous de rendre le script exécutable avec la commande :
 
 **Nota** : Pour devez être en mode sudo ou votre session shell doit avoir le droit super utilisateur puisque certaines commandes que contient ce script demandent d'avoir des droits super utilisateur.
 
+### Prérequis pour les distributions Red Hat Enterprise Linux (RHEL) et CentOS
+
+**Nota** : Si vous utilisez une distribution Red Hat Enterprise Linux et vous avez déjà une version JDK installée. Vous devez d'abord la supprimer en saisissant cette commande : 
+
+`dnf remove java-* -y`
+
 ## Guide d'exécution du script 
 
 

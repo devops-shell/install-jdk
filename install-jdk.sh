@@ -142,11 +142,6 @@ $cmd
 
 elif [[ "$distro" == *"$rhel"* ]]; then
 
-echo "[*]: uninstall openJDK"
-
-# Exécution de la commande 
-$("dnf remove java-* -y")
-
 echo "[**]: install openJDK"
 
 
@@ -194,11 +189,6 @@ $cmd
 
     
 elif [[ "$distro" == *"$rhel"* ]]; then
-
-echo "[*]: uninstall openJDK"
-
-# Exécution de la commande 
-$("dnf remove java-* -y")
 
 echo "[**]: install openJDK"
 
