@@ -45,7 +45,7 @@ Assurez-vous de rendre le script exécutable avec la commande :
 
 # Exécution du script
 
-**Nota** : Pour devez être en mode sudo ou votre session shell doit avoir le droit super utilisateur puisque certaines commandes que contient ce script demandent d'avoir des droits super utilisateur.
+**Nota** : Vous devez être en mode sudo ou votre session shell doit avoir le droit super utilisateur puisque certaines commandes que contient ce script demandent d'avoir des droits super utilisateur.
 
 ### Prérequis pour les distributions Red Hat Enterprise Linux (RHEL) et CentOS
 
