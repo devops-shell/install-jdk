@@ -144,17 +144,8 @@ elif [[ "$distro" == *"$rhel"* ]]; then
 
 echo "[*]: uninstall openJDK"
 
-if [ $1 -eq 8 ] ; then
-
-remouv= "dnf remove java-1.8.0*"
+remouv= "dnf remove java-* -y"
 $remouv
-
-else
-
-remouv= "dnf remove java-"$1"*"
-$remouv
-
-fi
 
 echo "[**]: install openJDK"
 
@@ -206,17 +197,8 @@ elif [[ "$distro" == *"$rhel"* ]]; then
 
 echo "[*]: uninstall openJDK"
 
-if [ $1 -eq 8 ] ; then
-
-remouv= "dnf remove java-1.8.0*"
+remouv= "dnf remove java-* -y"
 $remouv
-
-else
-
-remouv= "dnf remove java-"$1"*"
-$remouv
-
-fi
 
 echo "[**]: install openJDK"
 
