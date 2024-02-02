@@ -5,7 +5,7 @@ Ce script shell permet d'installer JDK ou JRE en spécifiant une des version LTS
 
 Pour installer JDK ou JRE en spécifiant une des versions LTS suivantes [8,11,17,21] sur votre système d'exploitation suivez ce guide :
 
-### Pour quel fin vous avez besoin installer JDK ou JRE ?
+### Pour quel fin vous avez besoin d'installer JDK ou JRE ?
 
 >Vous avez besoin d'installer **JDK** lorsque vous développez des applications Java (JEE, JSE, Android, ...), vous avez besoin du JDK car il contient tous les outils de développement.  Il comprend le **JRE** et tous les outils nécessaires pour développer, compiler (__javac__ : le compilateur Java), déboguer et exécuter des applications Java.
 
@@ -45,7 +45,7 @@ Assurez-vous de rendre le script exécutable avec la commande :
 
 ### Exécution du script
 
-**Nota** : Vous devez être en mode sudo ou votre session shell doit avoir le droit super utilisateur puisque certaines commandes que contient ce script demandent d'avoir des droits super utilisateur.
+**Nota** : Vous devez avoir le droit d'utiliser la commande sudo (Appartenir dans le groupe sudoers) puisque certaines commandes que contient ce script demandent d'avoir des droits super utilisateur.
 
 #### Prérequis pour les distributions Red Hat Enterprise Linux (RHEL) et CentOS
 
